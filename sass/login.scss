@@ -1,0 +1,215 @@
+*{padding:0;margin:0}
+body{font-size:12px;color:#3e3e3e;}
+a{color:#3e3e3e;text-decoration:none;}
+input,button,div{outline: none}
+li{list-style:none;}
+.l-login-top{
+  width:100%;
+  height:60px;
+  .l-login-logo{
+    width:1200px;
+    height:60px;
+    margin:0 auto;
+    line-height:60px;
+    img{
+      display:inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+.l-login-page{
+  width:100%;
+  background:#f7f2ec;
+  .l-login-bg{
+    width:100%;
+    height:700px;
+    background:url("../images/login_bg.jpg") no-repeat center ;
+    border-top:1px solid #e5e5e5;
+    form{
+      width:1200px;
+      height:560px;
+      margin:70px auto 0;
+    }
+  }
+}
+.l-login-table{
+  width:422px;
+  height:562px;
+  float:right;
+  border:1px solid #d8d8d8;
+  box-shadow:0 0 20px #c8c8c8;
+  background:#fff;
+  position: relative;
+  .l-chose{
+    width:100%;
+    height:52px;
+    background:#f7f7f9;
+    li{
+      width:50%;
+      float:left;
+      text-align:center;
+      a{
+        display: block;
+        width:100%;
+        height:52px;
+        font-size:16px;
+        line-height:52px;
+        font-weight:700;
+        border-bottom:2px solid #f7f7f9;
+      }
+    }
+    li:nth-of-type(1) a{
+      border-bottom:2px solid #464646;
+    }
+  }
+}
+.l-uname,.l-pwd{
+  width:302px;
+  height:36px;
+  margin:24px auto 0;
+  display:block;
+  position:relative;
+  input{
+    width:302px;
+    height:36px;
+  }
+  span{
+    height:36px;
+    line-height:36px;
+    font-size:12px;
+    position:absolute;
+    top:1px;
+    left:10px;
+    color:#aaa;
+    background:#fff;
+  }
+}
+.l-login-check{
+  width:302px;
+  height:20px;
+  margin:24px auto 0;
+  .l-check{
+    background:url("../images/login_sprite.png") no-repeat -160px 0;
+    width:16px;
+    height:16px;
+    display:inline-block;
+    float:left;
+  }
+  a{
+    float:right;
+  }
+  .l-tsmsg{
+    line-height: 12px;
+    position: relative;
+    top:7px;
+    color: #DE6907;
+    padding: 3px;
+    background-color: #FFFCD1;
+    border: 1px solid #F1D47C;
+    display: none;
+    i{
+      background-color: #FFFCD1;
+      border: 1px solid #F1D47C;
+    }
+    b{
+      display: block;
+      width: 15px;
+      top: -7px;
+      left: 50px;
+      height:7px;
+      position: absolute;
+      background: url(../images/regist_01.png)  no-repeat -12px -50px;
+    }
+  }
+}
+.l-btn{
+  width:302px;
+  height:40px;
+  margin:24px auto 0;
+  button{
+    float: left;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    background: url(../images/login_sprite.png) 0 -40px no-repeat;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+.l-info{
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px 0 0;
+  dt{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin: -15px 0 25px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    span{
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      margin: 0 0 0 -60px;
+      background: #fff;
+      width: 120px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+  ul{
+    width: 270px;
+    height: 30px;
+    margin: 0 auto;
+    background:#fff;
+    li{
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin: 0 30px 0 0;
+      overflow: hidden;
+      a{
+        opacity: .8;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url(../images/login_sprite.png) no-repeat 0 0;
+      }
+    }
+    li:nth-of-type(2) a{
+      background-position: -30px 0;
+    }
+    li:nth-of-type(3) a{
+      background-position: -60px 0;
+    }
+    li:nth-of-type(4) a{
+      background-position: -90px 0;
+    }
+    li:nth-of-type(5){
+      margin-right:0;
+      a{
+        background-position: -120px 0;
+      }
+    }
+  }
+}
+.l-erweima{
+  background: url(../images/login_sprite.png) 0 -400px no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.l-erweima-msg{
+  background: url(../images/login_sprite.png) 0 -360px no-repeat;
+  width: 85px;
+  height: 25px;
+  position: absolute;
+  right: 55px;
+  bottom: 12px;
+}
