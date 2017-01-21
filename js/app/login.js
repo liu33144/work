@@ -41,5 +41,10 @@ $(function () {
     });
     $(".l-check").on("mouseleave", function () {
         $(".l-tsmsg").css("display","none");
-    })
+    });
+    $(".l-erweima").on("click", function () {
+       //console.log($(this).parent());
+       $(this).parent().css("display","none");
+       $(this).parent().siblings().css("display","block");
+    });
 });

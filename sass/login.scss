@@ -233,3 +233,32 @@ li{list-style:none;}
   right: 55px;
   bottom: 12px;
 }
+.l-tab{
+  padding:30px;
+}
+.l-erweima-ewm{
+  width: 300px;
+  margin: 40px auto;
+  text-align: center;
+}
+.l-foot{
+  width:100%;
+  margin-top:10px;
+  .l-foot-nav{
+    width:1200px;
+    height:100px;
+    margin:0 auto;
+    padding-top:15px;
+    text-align: center;
+    a{
+      color:#464646;
+    }
+    b{
+      padding:0 5px;
+    }
+  }
+  .l-footer{
+    text-align: center;
+    padding-top:10px;
+  }
+}
