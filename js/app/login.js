@@ -5,8 +5,18 @@ $(function () {
     //短信登陆/密码登陆选择
    $(".l-chose>li>a").on("click", function () {
        $(this).css("border-color","#464646");
-       $(this).parent().siblings().children().css("border-color","#f7f7f9")
+       $(this).css("color","#3e3e3e");
+       $(this).parent().siblings().children().css("border-color","#f7f7f9");
+       $(this).parent().siblings().children().css("color","#afafaf");
    })
+    $(".l-duanxin").on("click", function () {
+        $(".l-validate").css("display","block");
+        $(".l-show").css("display","none");
+    });
+    $(".l-mima").on("click", function () {
+        $(".l-validate").css("display","none");
+        $(".l-show").css("display","block");
+    });
 
     //登陆账号密码效果
     $(".l-exchange>input").focus(function () {

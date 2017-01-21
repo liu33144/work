@@ -20,14 +20,23 @@
         <form action="">
             <div class="l-login-table">
                 <ul class="l-chose">
-                    <li><a href="javascript:;">短信登陆</a></li>
-                    <li><a href="javascript:;">密码登陆</a></li>
+                    <li><a class="l-duanxin" href="javascript:;">短信登陆</a></li>
+                    <li><a class="l-mima" href="javascript:;">密码登陆</a></li>
                 </ul>
-                <div class="l-uname l-exchange">
+                <div class="l-uname l-exchange l-validate">
+                    <input type="text">
+                    <span class="l-umg">手机号码</span>
+                </div>
+                <div class="l-pwd l-exchange l-validate">
+                    <input type="password" style="width:187px">
+                    <span class="l-pmg">短信验证码</span>
+                    <a href="javascript:;">找回密码</a>
+                </div>
+                <div class="l-uname l-exchange l-show" style="display:none">
                     <input type="text">
                     <span class="l-umg">手机号/邮箱/用户名</span>
                 </div>
-                <div class="l-pwd l-exchange">
+                <div class="l-pwd l-exchange l-show" style="display:none">
                     <input type="password">
                     <span class="l-pmg">密码</span>
                 </div>
