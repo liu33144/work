@@ -48,3 +48,5 @@ $(function () {
        $(this).parent().siblings().css("display","block");
     });
 });
+/*http://search.xiu.com/ajax/autocomplete.htm?&q=x&limit=10*/
+
