@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head ng-app="myApp">
+<head>
     <meta charset="UTF-8">
     <title>购物车</title>
     <link rel="stylesheet" href="../css/shopcar.css">
+    <script src="../js/lib/jquery-1.12.4.js"></script>
     <script src="../js/angular/angular.min.js"></script>
     <script src="../js/app/shopcar.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
 <div class="s-top-bg">
     <img class="s-top-logo" src="../images/s_05.png" alt="">
     <p class="s-top-phone">客服热线（免长途费）：<span>400-888-4499</span> <a href="javascript:;">在线客服</a></p>
@@ -31,19 +32,19 @@
         <tr class="s-good-msg">
             <td><input type="checkbox"></td>
             <td>
-                <div>{{image}}</div>
+                <img ng-src="{{image}}" alt="">
                 <ul>
                     <li>{{uname}}</li>
                     <li><a href="javascript:;">{{msg}}</a></li>
                     <li>{{size}}</li>
                 </ul>
             </td>
-            <td>{{price}}</td>
-            <td>{{money}}</td>
+            <td ng-model="price">{{price | currency:"￥"}}</td>
+            <td>{{money | currency:"￥"}}</td>
             <td>
-                <a href="javascript:;">-</a>
-                <input type="text" ng-model="num" value="1">
-                <a href="javascript:;">+</a>
+                <a class="s-jian" href="javascript:;">-</a>
+                <input class="s-num" type="text" ng-model="num">
+                <a class="s-add" href="javascript:;">+</a>
             </td>
             <td>
                 <ul>
@@ -54,7 +55,12 @@
         </tr>
     </table>
     <div class="s-good-end">
-        ul>li*
+        <ul>
+            <li><input type="checkbox">全选</li>
+            <li>删除</li>
+            <li>清楚失效商品</li>
+            <li></li>
+        </ul>
     </div>
 </div>
 </body>

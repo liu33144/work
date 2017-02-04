@@ -1,8 +1,8 @@
+@charset "utf-8";
 .main-top-bg{
   background:#333;
   width:100%;
   height:93px;
-  z-index: 0;
   .main-top{
     width:1200px;
     margin:0 auto;
@@ -45,9 +45,129 @@
   }
 }
 .main-logo{
-  margin:auto;
-  width:194px;
-  height:30px;
-  color:#fff;
+  margin-left:50px;
+  display:inline-block;
+  width:212px;
+  height:32px;
+  background:url("../images/spriter2016.png") no-repeat 0 0;
   z-index: 100;
+}
+.main-search{
+  float:right;
+  display:inline-block;
+  input{
+    width:263px;
+    height:28.5px;
+    border:1px solid #a9a9a9;
+    color:initial;
+    background-color:initial;
+  }
+}
+.main-nav{
+  width:1200px;
+  height:43.75px;
+  text-align:center;
+  margin:5px auto 0;
+  li{
+    display:inline-block;
+    a{
+      color:#e3e3e3;
+      font-size:15px;
+      display:inline-block;
+      padding:10px 15px 10px;
+      margin:0 6px;
+      border-bottom:2px solid #333;
+    }
+  }
+  li:nth-of-type(1){
+    a{
+      border-color:#727071;
+    }
+  }
+  li:hover{
+    a{
+      border-color:#727071;
+    }
+  }
+  li:nth-of-type(6){
+    a{
+      color:#dc0f21;
+    }
+  }
+}
+.main-big-nav{
+  width:100%;
+  height:42px;
+  background:#f7f7f7;
+  border-bottom:1px solid #fff;
+  .main-nb{
+    width:1200px;
+    margin:0 auto;
+    text-align:center;
+    li{
+      display:inline-block;
+      width:62px;
+      text-align:center;
+      position: relative;
+      a{
+        font-size:15px;
+        display:inline-block;
+        height:42px;
+        line-height:42px;
+        margin-right:5px;
+        color:#000;
+      }
+      div{
+        position: absolute;
+        top:42px;
+        left:0;
+        border:2px solid #f7f7f7;
+        border-top:0;
+        width:720px;
+        padding:10px 10px 0 15px;
+        height:390px;
+        display:none;
+        background:#fff;
+        z-index: 1000;
+      }
+    }
+    li:hover{
+        border-left:2px solid #f7f7f7;
+        border-right:2px solid #f7f7f7;
+        border-bottom:2px solid #fff;
+        background:#fff;
+        box-sizing: border-box;
+      div{
+        display:block;
+      }
+    }
+  }
+}
+.main-banner{
+  min-width: 1200px;
+  margin:0 auto;
+  background:url("../images/body_bg3.jpg") center 1009px repeat-y;
+  div{
+    height:162px;
+  }
+  div:nth-of-type(1) {
+    background: url("../images/top_01.jpg") no-repeat center top;
+  }
+  div:nth-of-type(2) {
+    background: url("../images/top_02.jpg") no-repeat center top;
+  }
+  div:nth-of-type(3) {
+    background: url("../images/top_03.jpg") no-repeat center top;
+  }
+  div:nth-of-type(4) {
+    background: url("../images/top_04.jpg") no-repeat center top;
+  }
+  div:nth-of-type(5) {
+    background: url("../images/top_05.jpg") no-repeat center top;
+    height:148px;
+  }
+  div:nth-of-type(6) {
+    background: url("../images/top_06a.jpg") no-repeat center top;
+    height:213px;
+  }
 }
