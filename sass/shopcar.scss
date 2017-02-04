@@ -1,0 +1,136 @@
+*{padding:0;margin:0}
+a{text-decoration: none;color:#5b5b5b;}
+li{list-style:none}
+.s-top-bg{
+  width:950px;
+  height:64px;
+  border-bottom:1px solid #000;
+  padding-top:12px;
+  margin:0 auto;
+  .s-top-logo{
+    margin-left:10px;
+  }
+  .s-top-phone{
+    float:right;
+    height:20px;
+    width:600px;
+    text-align:right;
+    line-height:20px;
+    font-size:12px;
+    color:#5b5b5b;
+    margin-right:10px;
+    span{
+      color:#F26521;
+      font-size:18px;
+      display:inline-block;
+      font-weight:700;
+    }
+    a:hover{
+      color:orangered;
+    }
+  }
+  .s-top-uname{
+    float:right;
+    position: relative;
+    font-size:12px;
+    color:#5b5b5b;
+    top:-15px;
+    margin-right:10px;
+    a:hover{
+      color:orangered;
+    }
+  }
+}
+.s-top-next{
+  width:950px;
+  margin:0 auto;
+  height:40px;
+  padding-top:15px;
+  .s-top{
+    float:left;
+    width:316px;
+    height:24px;
+    text-align:center;
+    background:#e2e2e2;
+    line-height:24px;
+    span{
+      background:url("../images/s_shop1.gif") no-repeat 0 0;
+      display:inline-block;
+      float:right;
+      width:27px;
+      height:32px;
+      position:relative;
+      top:-4px;
+    }
+  }
+  .s-top-1{
+    background:#82bf38;
+  }
+  .s-top-2{
+    span{
+      background-position: -27px 0;
+    }
+  }
+}
+.s-goods{
+  width:950px;
+  margin:0 auto;
+  .s-shop-goods{
+    width:950px;
+    border-collapse: collapse;
+    border:1px solid #d6d3d3;
+    .s-good-nav{
+      height:33px;background:#e3e3e3;color:#5b5b5b;
+      font-size:12px;
+      th{
+        text-align:center;
+      }
+    }
+    .s-good-msg{
+      height:110px;
+      td:nth-of-type(1){
+        width:54px;
+        text-align:center;
+      }
+      td:nth-of-type(2){
+        div{
+          width:82px;
+          display:inline-block;
+        }
+        ul{
+          width:200px;
+          display:inline-block;
+          li{
+            line-height:25px;
+            a{
+              color:#000;
+            }
+          }
+          li:nth-of-type(3){
+            color:#5b5b5b;
+          }
+        }
+      }
+      td:nth-of-type(3){
+        width:96px;
+        text-align:center;
+      }
+      td:nth-of-type(4){
+        width:130px;
+        text-align:center;
+      }
+      td:nth-of-type(5){
+        width:130px;
+        text-align:center;
+        input{
+          width:15px;
+          text-align:center;
+        }
+      }
+      td:nth-of-type(6){
+        width:130px;
+        text-align:center;
+      }
+    }
+  }
+}

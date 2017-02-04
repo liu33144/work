@@ -2,6 +2,7 @@
   background:#333;
   width:100%;
   height:93px;
+  z-index: 0;
   .main-top{
     width:1200px;
     margin:0 auto;
@@ -32,6 +33,9 @@
         color:orangered;
         ul{
           display:block;
+          li:hover{
+            color:orangered;
+          }
         }
       }
       a:hover{
@@ -39,4 +43,11 @@
       }
     }
   }
+}
+.main-logo{
+  margin:auto;
+  width:194px;
+  height:30px;
+  color:#fff;
+  z-index: 100;
 }
