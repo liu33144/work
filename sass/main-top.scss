@@ -70,6 +70,7 @@
   text-align:center;
   margin:5px auto 0;
   background:rgba(051,051,051,1);
+  z-index: 1000;
   li{
     display:inline-block;
     a{
@@ -102,6 +103,7 @@
   height:42px;
   background:rgba(247,247,247,0.7);
   border-bottom:1px solid #fff;
+  z-index: 1000;
   .main-nb{
     width:1200px;
     margin:0 auto;

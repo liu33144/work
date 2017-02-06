@@ -17,3 +17,59 @@
     }
   }
 }
+.index-link{
+  width:1200px;
+  height:86px;
+  padding:0 0 20px 30px;
+  margin:0 auto;
+  li{
+    float:left;
+    width:250px;
+    margin:0 60px 0 0;
+    background:url("../images/shortcut3a.jpg") no-repeat;
+    height:86px;
+    transition: all 0.5s;
+  }
+  li:hover{
+    transform:translateX(-20px);
+  }
+  li:nth-of-type(1){
+    background-position: 0 0 ;
+  }
+  li:nth-of-type(2){
+    background-position: -250px 0 ;
+  }
+  li:nth-of-type(3){
+    background-position: -745px 0 ;
+  }
+  li:nth-of-type(4){
+    background-position: -985px 0 ;
+    margin:0
+  }
+}
+.index-main{
+  width:1200px;
+  margin:0 auto;
+  overflow: hidden;
+  .index-main-tu{
+    margin:0 0 40px 0;
+    overflow: hidden;
+    div{
+      position:relative;
+      span{
+        display:none;
+        position:absolute;
+        top:0;left:0;
+        width:400px;
+        height:300px;
+        background:#fff;
+        opacity: 0.5;
+      }
+    }
+    div:hover{
+      span{
+        display:block;
+      }
+    }
+  }
+}
