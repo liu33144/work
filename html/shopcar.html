@@ -42,9 +42,9 @@
             <td ng-model="price">{{price | currency:"￥"}}</td>
             <td>{{money | currency:"￥"}}</td>
             <td>
-                <a class="s-jian" href="javascript:;">-</a>
+                <a ng-click="num = num * 1 - 1" href="javascript:;">-</a>
                 <input class="s-num" type="text" ng-model="num">
-                <a class="s-add" href="javascript:;">+</a>
+                <a ng-click="num = num * 1 + 1" href="javascript:;">+</a>
             </td>
             <td>
                 <ul>

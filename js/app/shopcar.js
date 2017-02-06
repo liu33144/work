@@ -9,18 +9,4 @@ app.controller("myCtrl1", function ($scope) {
     $scope.$watch("num",function () {
         $scope.money =  $scope.num * $scope.price
     },true);
-    $(".s-jian").on("click", function () {
-        console.log($(".s-num").val());
-        var s = $(".s-num").val();
-        s--;
-        $(".s-num").val(s);
-        $scope.num = s;
-    });
-    $(".s-add").on("click", function () {
-        console.log($(".s-num").val());
-        var s = $(".s-num").val();
-        s++;
-        $(".s-num").val(s);
-        $scope.num = s;
-    });
 });
