@@ -4,6 +4,15 @@
   height:610px;
   position: relative;
   overflow: hidden;
+  .index-lo{
+    position:fixed;
+    width:120px;
+    height:272px;
+    top:40%;
+    margin-left:1200px;
+    background:url("../images/lo0.png") no-repeat center center;
+    z-index: 1000;
+  }
   ul{
     position:absolute;
     top:0;
@@ -73,3 +82,88 @@
     }
   }
 }
+.index-main-tub{
+  margin:0 auto;
+  width:1200px;
+  overflow: hidden;
+  div{
+    float:left;
+    margin:0 0 40px 0;
+    overflow: hidden;
+    position: relative;
+    img{
+      transition: all 0.5s;
+      display:block;
+      z-index: 0;
+    }
+    span{
+      width:600px;
+      height:300px;
+      display:block;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 100;
+    }
+  }
+  div:hover{
+    img{
+      transform:scale(1.1,1.1) ;
+    }
+  }
+}
+.index-title{
+  width:1200px;
+  height:60px;
+  margin:0 auto;
+  position: relative;
+  span{
+    width:1200px;
+    height:400px;
+    background:#fff;
+    opacity:0.3;
+    display:none;
+    position:absolute;
+    top:0;left: 0;
+  }
+  img{
+    margin:0 auto;
+    display:block;
+  }
+}
+.index-title:hover{
+  span{display:block;}
+}
+.index-show{
+  width:1218px;
+  margin:0 auto;
+  overflow: hidden;
+  .index-show-ul{
+    li{
+      float:left;
+      margin:0 17px 20px 0;
+      position: relative;
+      span{
+        position:absolute;
+        top:0;
+        left:0;
+        width:285px;
+        height:490px;
+        border:1px solid #efefef;
+        display:none;
+        box-sizing: border-box;
+      }
+    }
+    li:hover{
+      span{
+        display:block;
+      }
+    }
+  }
+}
+.index-end{
+  width:100%;
+  background:#ebebeb;
+  #index-foot{margin:0 auto;width:1200px;}
+}
+

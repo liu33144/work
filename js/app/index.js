@@ -3,6 +3,7 @@
  */
 $(function () {
     $("#index-top").load("main-top.html");
+    $("#index-foot").load("main-foot.html");
     var json = [{"src":"../images/a0.jpg"},{"src":"../images/a1.jpg"}];
     for(var i = 0;i < json.length;i++){
         var $li = $("<li>");
@@ -43,6 +44,31 @@ $(function () {
         {"src":"../images/tu32.jpg"},{"src":"../images/tu33.jpg"},
         {"src":"../images/tu34.jpg"},{"src":"../images/tu35.jpg"}
     ];
+    var $tub = [
+        {"src":"../images/tub0.jpg"},{"src":"../images/tub1.jpg"},
+        {"src":"../images/tub2.jpg"},{"src":"../images/tub3.jpg"},
+        {"src":"../images/tub4.jpg"},{"src":"../images/tub5.jpg"}
+    ];
+    var $tuz = [
+        {"src":"../images/tuz0.png"},{"src":"../images/tuz1.png"},
+        {"src":"../images/tuz2.png"},{"src":"../images/tuz3.png"},
+        {"src":"../images/tuz4.png"},{"src":"../images/tuz5.png"}
+    ];
+    var $title = [
+        {"src":"../images/title0.jpg"},{"src":"../images/title1.jpg"},
+        {"src":"../images/car0.jpg"},
+        {"src":"../images/title2.jpg"},{"src":"../images/title3.jpg"}
+    ];
+    var $show = [
+        {"src":"../images/show0.jpg"},{"src":"../images/show1.jpg"},
+        {"src":"../images/show2.jpg"},{"src":"../images/show3.jpg"},
+        {"src":"../images/show4.jpg"},{"src":"../images/show5.jpg"},
+        {"src":"../images/show6.jpg"},{"src":"../images/show7.jpg"},
+        {"src":"../images/show8.jpg"},{"src":"../images/show9.jpg"},
+        {"src":"../images/show10.jpg"},{"src":"../images/show11.jpg"},
+        {"src":"../images/show12.jpg"},{"src":"../images/show13.jpg"},
+        {"src":"../images/show14.jpg"},{"src":"../images/show15.jpg"}
+    ];
     for(var m = 0;m < $json.length;m++){
         $div = $("<div>");
         $div.css({"float":"left"});
@@ -71,5 +97,28 @@ $(function () {
             $(".index-main-tu").eq(5).append($div);
         }
     }
-
+    for(var n = 0;n < $tub.length;n++){
+        $div_tub = $("<div>");
+        $span_tub = $("<span>");
+        $span_tub.css("background","url("+$tuz[n].src+") no-repeat center center");
+        $img_tub = $("<img>");
+        $img_tub.attr("src",$tub[n].src);
+        $div_tub.append($img_tub);
+        $div_tub.append($span_tub);
+        $(".index-main-tub").append($div_tub);
+    }
+    for(var t = 0;t < $title.length;t++){
+        $img_t = $("<img>");
+        $img_t.attr("src",$title[t].src);
+        $(".index-title").eq(t).append($img_t);
+    }
+    for(var s = 0;s < $show.length;s++){
+        $li = $("<li>");
+        $span_s = $("<span>");
+        $img_s = $("<img>");
+        $img_s.attr("src",$show[s].src);
+        $li.append($img_s);
+        $li.append($span_s);
+        $(".index-show-ul").append($li);
+    }
 });
